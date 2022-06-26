@@ -1,4 +1,4 @@
-# tools_26_project
+# tools_sv_project
 툴스_개인프로젝트형 스터디
 
 1. 제목
