@@ -43,6 +43,6 @@
 
 (https://youtube.com/playlist?list=PLuHgQVnccGMAIluRRVsC1e79ri-dwnBmR)
 
-+어떤 식으로 나타낼지 다른 이미지 구상
++어떤 식으로 나타낼지 구상
 
 
