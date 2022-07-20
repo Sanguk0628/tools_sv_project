@@ -46,6 +46,7 @@
 (https://youtube.com/playlist?list=PLkiWrI-TY1CfkYWj9pvWOn26dP2PTkKNO)
 
 +어떤 식으로 나타낼지 구상
-++ 디자인 먼저 대략  후 어떻게 기능을 잡을지 구상
+
+++디자인 먼저 대략  후 어떻게 기능을 잡을지 구상
 
 
