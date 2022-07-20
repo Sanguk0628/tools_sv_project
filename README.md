@@ -39,10 +39,13 @@
 
 # <프로젝트 진행상황>
 
--1~3주차: 유투브로 객체지향에서 배웠던 자바 복습 및 함수 공부 중. 
+-1~4주차: 유튜브로 객체지향에서 배웠던 자바 복습 및 함수 공부 중. 
 
 (https://youtube.com/playlist?list=PLuHgQVnccGMAIluRRVsC1e79ri-dwnBmR)
 
+(https://youtube.com/playlist?list=PLkiWrI-TY1CfkYWj9pvWOn26dP2PTkKNO)
+
 +어떤 식으로 나타낼지 구상
+++ 디자인 먼저 대략  후 어떻게 기능을 잡을지 구상
 
 
