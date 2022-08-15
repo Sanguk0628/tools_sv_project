@@ -45,8 +45,6 @@
 
 (https://youtube.com/playlist?list=PLkiWrI-TY1CfkYWj9pvWOn26dP2PTkKNO)
 
-+어떤 식으로 나타낼지 구상
+-5~6주차: 엑셀로 큰 디자인 및 기능 구상
 
-++디자인 먼저 대략  후 어떻게 기능을 잡을지 구상
-
-
+-7~8주차: 학습한 내용을 바탕으로 기본적인 구조 및 디자인을 코드로 구현함.
