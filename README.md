@@ -14,8 +14,8 @@
 
 ## 4. 개발 과정 
 ### 4-1. 개발환경
-* Android Studio
-* JAVA
+* IDE: Android Studio
+* Language: JAVA
 
 ### 4-2. 메인 기능
 * 사용자가 비교하려는 대상들의 편익, 명시적 비용, 암묵적 비용을 입력받아 DB에 저장
