@@ -23,6 +23,7 @@ public class Add extends AppCompatActivity {
         price1 = findViewById(R.id.edit_price1);
         btn_enter = findViewById(R.id.btn_enter);
 
+        //입력하면 데이터 get
         btn_enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

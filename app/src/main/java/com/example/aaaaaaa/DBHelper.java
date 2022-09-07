@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 import androidx.annotation.Nullable;
 
-class DBHelper extends SQLiteOpenHelper {
+class DBHelper extends SQLiteOpenHelper { //DB 관리
 
     private Context context;
     private static final String DATABASE_NAME = "database";
@@ -16,17 +16,19 @@ class DBHelper extends SQLiteOpenHelper {
 
     public static final String TABLE_CHOICE = "ch";
     public static final String COLUMN_CH_ID = "id";
-    public static String COLUMN_CH_ORDER = "ord";
+    public static final String COLUMN_CH_ORDER = "ord";
     public static final String COLUMN_CH_SUB = "sub";
     public static final String COLUMN_CH_NAME = "nam";
     public static final String COLUMN_CH_Price = "num";
 
-
+    //DB 생성
     DBHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
     }
 
+
+    //테이블 생성
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CHOICE_TABLE = "CREATE TABLE " + TABLE_CHOICE + "("
@@ -37,12 +39,14 @@ class DBHelper extends SQLiteOpenHelper {
                 + COLUMN_CH_Price + " INTEGER NOT NULL);";
         db.execSQL(CREATE_CHOICE_TABLE);
     }
+
     @Override
-    public void onUpgrade(SQLiteDatabase db, int i, int j) {
+    public void onUpgrade(SQLiteDatabase db, int oldVer, int newVer) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_CHOICE);
         onCreate(db);
     }
 
+    //데이터 추가
     void addData(int order, int sub, String name, int price){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -61,6 +65,8 @@ class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+
+    //데이터 읽어오기
     Cursor readData(){
         String query = "SELECT * FROM " + TABLE_CHOICE;
         SQLiteDatabase db = this.getReadableDatabase();
@@ -72,6 +78,7 @@ class DBHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+    //데이터 수정
     void updateData(String id, String order, String sub, String name, String price){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -87,9 +94,9 @@ class DBHelper extends SQLiteOpenHelper {
         }else {
             Toast.makeText(context, "성공적으로 수정되었습니다", Toast.LENGTH_SHORT).show();
         }
-
     }
 
+    //데이터-항목별 삭제
     void deleteOne(String id){
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.delete(TABLE_CHOICE, "id=?", new String[]{id});
@@ -100,11 +107,14 @@ class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+
+    //데이터 전부 삭제
     void deleteAll(){
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM " + TABLE_CHOICE);
     }
 
+    //합계-1 구하기
     public int CalTot1() {
         SQLiteDatabase db = this.getWritableDatabase();
         int a1=0, b1=0, c1=0, tot1=0;
@@ -127,6 +137,8 @@ class DBHelper extends SQLiteOpenHelper {
         return tot1;
     }
 
+
+    //합계-2 구하기
     public int CalTot2() {
         SQLiteDatabase db = this.getWritableDatabase();
         int a2=0, b2=0, c2=0, tot2=0;

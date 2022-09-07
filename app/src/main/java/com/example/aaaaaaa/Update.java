@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -63,20 +62,18 @@ public class Update extends AppCompatActivity {
     void getnSetData(){
         if(getIntent().hasExtra("id") && getIntent().hasExtra("ord") && getIntent().hasExtra("sub")
                 && getIntent().hasExtra("nam") && getIntent().hasExtra("num")){
-            //Getting Data from Intent
+            //데이터 겟
             id = getIntent().getStringExtra("id");
             order = getIntent().getStringExtra("ord");
             sub = getIntent().getStringExtra("sub");
             name = getIntent().getStringExtra("nam");
             price = getIntent().getStringExtra("num");
 
-            //Setting Intent Data
+            //데이터 다시 셋
             order2.setText(order);
             sub2.setText(sub);
             name2.setText(name);
             price2.setText(price);
-            Log.d("22", order+" "+sub+" "+name+" "+name);
-
         }else{
             Toast.makeText(this, "조회할 데이터가 없습니다", Toast.LENGTH_SHORT).show();
         }
@@ -93,12 +90,10 @@ public class Update extends AppCompatActivity {
                 myDB.deleteOne(id);
                 finish();
             }
-
         });
         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-
             }
         });
         builder.create().show();

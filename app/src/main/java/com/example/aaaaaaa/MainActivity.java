@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         recycler = findViewById(R.id.recycler);
         addBtn = findViewById(R.id.btn_dia);
 
+        //데이터 추가
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,12 +56,14 @@ public class MainActivity extends AppCompatActivity {
         name = new ArrayList<>();
         price = new ArrayList<>();
 
+        //데이터 가져와서 저장 n 리싸이클러뷰에 반영
         storeDataInArrays();
 
         customAdapter = new CustomAdapter(MainActivity.this, this, id, order, sub, name, price);
         recycler.setAdapter(customAdapter);
         recycler.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
+        //데이터들 계산한 값들 불러와서 TextView에 띄어주기
         int total1 = myDB.CalTot1();
         ttt1 = (TextView)findViewById(R.id.total1);
         ttt1.setText(total1+"");
@@ -68,10 +71,7 @@ public class MainActivity extends AppCompatActivity {
         int total2 = myDB.CalTot2();
         ttt2 = (TextView)findViewById(R.id.total2);
         ttt2.setText(total2+"");
-
-
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -80,8 +80,7 @@ public class MainActivity extends AppCompatActivity {
             recreate();
         }
     }
-
-    void storeDataInArrays(){
+    void storeDataInArrays(){ //데이터 등록
         Cursor cursor = myDB.readData();
         if(cursor.getCount() == 0){
         }else{
@@ -95,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //항목 모두 지우기
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -127,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setNegativeButton("아니요", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-
             }
         });
         builder.create().show();

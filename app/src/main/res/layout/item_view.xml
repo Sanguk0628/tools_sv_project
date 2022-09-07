@@ -57,7 +57,7 @@
             android:layout_marginLeft="5dp"
             android:text="1"
             android:layout_gravity="right"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="10sp"></TextView>
     </LinearLayout>
 
