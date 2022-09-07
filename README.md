@@ -18,7 +18,18 @@
 * IDE: Android Studio
 * Language: JAVA
 
-### 4-2. 메인 기능
+### 4-2. 사용법
+* 추가 버튼을 눌러서 선택지들별로 세부 항목과 **사용자가 생각하는 가치**를 입력한다.
+![ㄱ](https://user-images.githubusercontent.com/107661799/188784325-7de50344-ead1-4a4f-8dea-8f23457065a5.png)
+![ㄴ](https://user-images.githubusercontent.com/107661799/188784338-0d0572b4-be33-4dbd-b323-c082dc86331d.png)
+
+* 항목별로 터치하여 수정 및 삭제를 할 수 있다.
+![ㄹ](https://user-images.githubusercontent.com/107661799/188784402-73b800e1-047d-4ed7-a26d-fc3ded12cbfe.png)
+
+* 좌우로 각각의 선택지들의 순편익 결과를 보고 비교한다.
+![ㅁ](https://user-images.githubusercontent.com/107661799/188784423-1cf8fb94-94da-4a28-aaff-a6f9f934ac36.png)
+
+### 4-3. 메인 기능
 * 사용자가 비교하려는 대상들의 편익, 명시적 비용, 암묵적 비용을 Add로 입력받아 DB에 저장
 ![1](https://user-images.githubusercontent.com/107661799/188818936-8cdda6fb-f1c5-4171-8cbe-183a77c9979e.png)
 ![2](https://user-images.githubusercontent.com/107661799/188819026-12ff6f6d-f4e0-4dcf-807d-bff5c818141b.png)
@@ -31,17 +42,6 @@
 
 * DB 쿼리문을 호출하여 DB에서 기회비용 계산 및 메인화면으로 비교 결과 불러오기
 ![5](https://user-images.githubusercontent.com/107661799/188819573-2696268c-bf1b-41e1-b94f-e09513d7a4e9.png)
-
-### 4-3. 사용법
-* 추가 버튼을 눌러서 선택지들별로 세부 항목과 **사용자가 생각하는 가치**를 입력한다.
-![ㄱ](https://user-images.githubusercontent.com/107661799/188784325-7de50344-ead1-4a4f-8dea-8f23457065a5.png)
-![ㄴ](https://user-images.githubusercontent.com/107661799/188784338-0d0572b4-be33-4dbd-b323-c082dc86331d.png)
-
-* 항목별로 터치하여 수정 및 삭제를 할 수 있다.
-![ㄹ](https://user-images.githubusercontent.com/107661799/188784402-73b800e1-047d-4ed7-a26d-fc3ded12cbfe.png)
-
-* 좌우로 각각의 선택지들의 순편익 결과를 보고 비교한다.
-![ㅁ](https://user-images.githubusercontent.com/107661799/188784423-1cf8fb94-94da-4a28-aaff-a6f9f934ac36.png)
 
 ## 5. 개발 과정
 [7월 1주차 ~ 8월 4주차 ,2022]
