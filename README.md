@@ -24,10 +24,14 @@
 
 ### 4-3. 사용법
 * 추가 버튼을 눌러서 선택지들별로 세부 항목과 사용자가 생각하는 가치를 입력한다.
-* 항목별로 터치하여 수정 및 삭제를 할 수 있다.
-* 좌우로 각각의 선택지들의 순편익 결과를 보고 비교한다.
+![ㄱ](https://user-images.githubusercontent.com/107661799/188784325-7de50344-ead1-4a4f-8dea-8f23457065a5.png)
+![ㄴ](https://user-images.githubusercontent.com/107661799/188784338-0d0572b4-be33-4dbd-b323-c082dc86331d.png)
 
-*(프로젝트 실행결과) 이미지 혹은 gif 파일로 작성 및 설명 필요 
+* 항목별로 터치하여 수정 및 삭제를 할 수 있다.
+![ㄹ](https://user-images.githubusercontent.com/107661799/188784402-73b800e1-047d-4ed7-a26d-fc3ded12cbfe.png)
+
+* 좌우로 각각의 선택지들의 순편익 결과를 보고 비교한다.
+![ㅁ](https://user-images.githubusercontent.com/107661799/188784423-1cf8fb94-94da-4a28-aaff-a6f9f934ac36.png)
 
 ## 5. 개발 과정
 [7월 1주차 ~ 8월 4주차 ,2022]
