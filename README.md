@@ -19,9 +19,18 @@
 * Language: JAVA
 
 ### 4-2. 메인 기능
-* 사용자가 비교하려는 대상들의 편익, 명시적 비용, 암묵적 비용을 입력받아 DB에 저장
-* 입력한 데이터를 RecyclerView을 이용해 항목별로 시각화 & (터치 후 수정 및 삭제 기능)
+* 사용자가 비교하려는 대상들의 편익, 명시적 비용, 암묵적 비용을 Add로 입력받아 DB에 저장
+![1](https://user-images.githubusercontent.com/107661799/188818936-8cdda6fb-f1c5-4171-8cbe-183a77c9979e.png)
+![2](https://user-images.githubusercontent.com/107661799/188819026-12ff6f6d-f4e0-4dcf-807d-bff5c818141b.png)
+
+* 그리고 데이터를 받아와 RecyclerView에 반영
+![3](https://user-images.githubusercontent.com/107661799/188819034-4d643add-e830-4528-8682-20653d1c7037.png)
+
+* 항목별로 수정 및 삭제, 전체 삭제 가능
+![4](https://user-images.githubusercontent.com/107661799/188819560-6db52751-e7da-4939-88f1-bfb0fa5e3990.png)
+
 * DB 쿼리문을 호출하여 DB에서 기회비용 계산 및 메인화면으로 비교 결과 불러오기
+![5](https://user-images.githubusercontent.com/107661799/188819573-2696268c-bf1b-41e1-b94f-e09513d7a4e9.png)
 
 ### 4-3. 사용법
 * 추가 버튼을 눌러서 선택지들별로 세부 항목과 **사용자가 생각하는 가치**를 입력한다.
